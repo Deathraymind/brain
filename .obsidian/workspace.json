@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "file": "Certifications/Linux Essentials/Linux Essentials  Plan & Resources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flashcards"
+              "title": "Linux Essentials  Plan & Resources"
             }
           }
         ],
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -219,14 +220,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7406fe720319975c",
+  "active": "d9a98276c738ced7",
   "lastOpenFiles": [
+    "Certifications/Linux Essentials/Flashcards.md",
     "Obsdian Setup/Obsidian Plugins.md~",
     "2025-05-11.md",
     "Self Improvement/Untitled.canvas",
     "Self Improvement/2025 Self improvement.md",
     "Self Improvement",
-    "Certifications/Linux Essentials/Flashcards.md",
     "Obsdian Setup/Obsidian Plugins.md",
     "Obsdian Setup",
     "Certifications/Linux Essentials/Linux Essentials  Plan & Resources.md",
