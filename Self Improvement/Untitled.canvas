@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"1093e1aa1ef150e7","type":"text","text":"# 2025 Goals","x":-140,"y":-820,"width":280,"height":60},
+		{"id":"6e03ed5c9fa6b243","type":"text","text":"# Entrepreneurship ","x":-210,"y":-740,"width":420,"height":60,"color":"5"},
+		{"id":"aff7cda9d46c3820","type":"text","text":"# Education","x":420,"y":-740,"width":250,"height":60,"color":"3"},
+		{"id":"086d0522423a2e26","type":"text","text":"- [x] Start a successful business \n- [ ] launch a physical product (Skill Building)\n- [x] Join Start Up","x":-238,"y":-640,"width":477,"height":180,"color":"5"},
+		{"id":"c9a101b131ae2cc8","type":"text","text":"- [ ] Get out of high school\n- [ ] Finish Associates!  NEXT YEAR MASTERS! \n- [x] Security+\n- [ ] A+\n- [ ] Linux Essentials\n- [ ] fyodor Dostoevsky\n- [ ] ","x":308,"y":-640,"width":475,"height":220,"color":"3"},
+		{"id":"3dc5dc5ff1d0afaf","type":"text","text":"# Health","x":-660,"y":-740,"width":250,"height":60,"color":"4"},
+		{"id":"53432f6b12f0b212","type":"text","text":"- [x] Figure out \n- [x] Go out more PARTY!!\n- [ ] Resting Heart rate 90->70 (Currently 80)\n- [x] Bring Sodium Down to less than 1G per day\n- [ ] Muscle Up (15 Pullups)\n- [ ] 5 One arm push ups\n- [ ] 40 Crunches\n- [ ] 40 Push ups\n- [ ] 140lbs (135)\n- [ ] Cope Mental Health","x":-787,"y":-640,"width":505,"height":310,"color":"4"},
+		{"id":"34ba36234bc3074e","type":"text","text":"- [x] Contribute to Nix Base\n- [x] BowOS Site\n- [x] BowOS Server\n- [x] Free CAD \n- [x] Rebuild Open Source 3D printer\n- [x] Blender Animations\n- [ ] Home Lab Rebuild\n- [ ] Stream Line Docs\n- [ ] Learn Gimp\n- [ ] Circuit Building/Basics of Electrical Engineering\n- [x] CAD Simulation\n- [x] Quantum Cryptography \n- [ ] Launch SKYNET","x":-787,"y":-215,"width":505,"height":410,"color":"2"},
+		{"id":"648a86e47d0bc962","type":"text","text":"# Culture/Social","x":-153,"y":-300,"width":307,"height":60,"color":"6"},
+		{"id":"905fd67bc594824c","type":"text","text":"- [x] Help with scholarships\n- [ ] More Movie Nights\n- [x] FAMILY FIRST!\n- [x] Healthy Friends Only\n- [ ] ","x":315,"y":-215,"width":460,"height":220,"color":"1"},
+		{"id":"82c23498378f0f0e","type":"text","text":"- [ ] Read 12 Books 1/2 there\n- [x] Watch More Movies","x":-230,"y":-215,"width":460,"height":160,"color":"6"},
+		{"id":"6253a2263305fdcc","type":"text","text":"# Employment","x":-159,"y":-25,"width":320,"height":60,"color":"#732697"},
+		{"id":"5498d03ed7dddd5a","type":"text","text":"- [x] Build Resume\n- [x] Master List\n- [ ] Get a Job\n- [x] Contracting Resume\n- [x] Build 10 Contacts","x":-240,"y":60,"width":482,"height":220,"color":"#291033"},
+		{"id":"7db689c765db92d1","type":"text","text":"# Personal Projects","x":-734,"y":-300,"width":400,"height":60,"color":"2"},
+		{"id":"5079d67a04782bc4","type":"text","text":"# Family/Friends","x":376,"y":-300,"width":340,"height":60,"color":"1"}
+	],
+	"edges":[]
+}

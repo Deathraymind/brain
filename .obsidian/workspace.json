@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "f20e51e2d8a363fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "38e4fa0dc221acfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d940921353de5bba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flashcards"
+            }
+          },
+          {
+            "id": "3309f645b1dbb0f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flashcards"
+            }
+          },
+          {
+            "id": "df5027c6cdcc16b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsdian Setup/Obsidian Plugins.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Plugins"
+            }
+          },
+          {
+            "id": "bfbb4eadc131e1e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flashcards"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1fc927e1bd790821",
+    "type": "split",
+    "children": [
+      {
+        "id": "e01c64dae3044275",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7406fe720319975c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d9a98276c738ced7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d77325f9ed0a07ae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e69b224aae8225d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "642c23c42e810809",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48535bd5069eab56",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Flashcards"
+            }
+          },
+          {
+            "id": "c011c3618588fbef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Flashcards"
+            }
+          },
+          {
+            "id": "b0f56e630081e846",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a83811dc5052402b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Certifications/Linux Essentials/Flashcards.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Flashcards"
+            }
+          },
+          {
+            "id": "6c083d860127f6a5",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7406fe720319975c",
+  "lastOpenFiles": [
+    "Obsdian Setup/Obsidian Plugins.md~",
+    "2025-05-11.md",
+    "Self Improvement/Untitled.canvas",
+    "Self Improvement/2025 Self improvement.md",
+    "Self Improvement",
+    "Certifications/Linux Essentials/Flashcards.md",
+    "Obsdian Setup/Obsidian Plugins.md",
+    "Obsdian Setup",
+    "Certifications/Linux Essentials/Linux Essentials  Plan & Resources.md",
+    "Certifications/Linux Essentials/Linux Essentials PDF.md",
+    "Certifications/Linux Essentials/Linux+ Plan.canvas",
+    "Certifications/Security+/professor-messer-sy0-701-comptia-security-plus-practice-exams-v18-1.pdf",
+    "Certifications/Security+/Practice Test.md",
+    "Certifications/Security+/Security+ Week 2.md",
+    "Certifications/Security+/Security+ Week 1.md",
+    "Certifications/Security+/Security+ Week 3.md",
+    "Certifications/Security+/Security+ Week 4.md",
+    "Certifications/Security+/Security+ Week 5.md",
+    "2025-04-08.md",
+    "Certifications/Linux Essentials",
+    "Certifications/Security+",
+    "Certifications"
+  ]
+}

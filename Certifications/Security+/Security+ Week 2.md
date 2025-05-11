@@ -1,0 +1,395 @@
+#security [[Security+ Week 3]]
+
+- # Video 2.1.1 Threat Actors 
+	- ### Threat Actor 
+		- A person that have an effect on safety
+		- Attributes
+			- Internal
+			- External
+			- Resources/Funding
+			- Level of sophistication
+	- ### Nation State 
+		- external entity
+		- government
+		- Motives
+			- data ex filtration
+			- philosophical
+			- revenge
+			- disruption
+			- war
+		- APT
+		- High Sophistication
+			- they work with a government
+	- ### APT 
+		- Advanced Persistent Threat
+			- They don't really know what they are doing
+			- Motives
+				- disruption
+				- data
+				- something philosophical
+			- internal or external
+			- limited resources
+	- ### Hacktivist 
+		- a hacker with a purpose
+		- external
+		- sophisticated
+		- Motives
+			- DoS
+			- website defacing
+			- private document
+	- ### Insider threat 
+		- motivated by revenge and finacial gain
+		- using the orginizations resources against themselves
+		- internal
+	- ### Organized crime 
+		- profesional criminals
+		- motivated by money
+		- very soophisticated
+		- Organized/ multiple people with their own job
+		- lots of funding
+	- ### Shadow IT 
+		- working arounf the inernal it orginization builds their own infastructure
+		- they put own roadblocks
+		- limited budget
+		- medium sophistication
+- # Video 2.2.1 Common Threat Vectors
+	- ### Message based vectors 
+		- vulnerability in email
+		- malicious links
+		- Phishing attacks
+		- SMS
+	- ### Image-based vectors 
+		- SVG  Scaleable vector graphic
+			- it can contain code that gets executed by youre browser
+			- HTML Injection through xml from a svg
+	- ### File Based vectors 
+		- PDF
+			- a file containing other objects
+		- ZIP/RAR
+			- contains many files within it
+		- Microsoft office
+			- documents with macros
+			- add-in files
+	- ### Vishing based vectors 
+		- phishing over the phone to get personal information over phone
+	- ### Removable device based vectors 
+		- get arond the firewall
+		- is malicious software on a usb software
+		- usb drives can act as a keyboard
+	- ### Vulnerable software vectores 
+		- infected executable
+		- known or unknown vulnerabilities in software
+		- agent-less apps stuff from a browser or central server
+	- ### Unsupported system vectors 
+		- pathcing device is no longer a option
+		- stuck on old cruddy software with vulnerabilities
+		- IT might not know the device exists
+	- ### Insecure network vectors 
+		- wireless, use WPA3
+		- unsecure interfaces
+			- 802.1x to lock down ports
+		- Bluetooth
+	- ### Open services ports 
+		- most network based attacks
+		- every open port is a vulnerability
+		- keep firewall rules tight
+	- ### Default Credentials
+	- ### Supply Chain Vectors 
+		- Tamper with underlying infrastructure
+		- MSPs
+		- Vulnerability in a Cisco device
+	- ### MSP 
+		- Managed service providers
+		- access different costumers networks from a central location
+- # Video 2.2.2 Phishing
+	-
+- # Video 2.2.3 Impersonation
+	- ### Impersonation 
+		- bad spelling, too good of a deal, out of no where.
+		- They can use personal information to get some sort of trust
+- # Video 2.2.4 Watering Hole Attacks
+	- ### Watering hole attack 
+		- A attacker will poison the source where people will come to
+		- infect a website that the users use with any type of attack including social networking
+		- You can prevent this by having a IPS monitor traffic that the firewall let in
+- # Video 2.2.5 Other types of social engineering attacks
+	- ### Misinformation/disinformation 
+		- create confusion and division
+		- influence campaigns 
+			- sway public opinions
+			- social media and advertising
+		- Nation state actors 
+			- divide distract and persuade
+		- Brand Impersonation
+- # Video 2.3.1 Memory Injections
+	- ### Memory injection 
+		- add code into memory
+		- hide malware in process
+			- gives the malware the same permission as the process it hides in
+		- DLL is a windows process
+	- ### DLL 
+		- Dynamic Link Library\
+- # Video 2.3.2 Buffer Overflows
+	- ### Buffer overflow attack 
+		- overwriting a buffer of memory spills into other parts of a applications memoery
+		- not simple
+		- Sometimes does nothing
+		- ![image.png](../assets/image_1736386862936_0.png)
+- # Video 2.3.3 Race Conditions
+	- ### Race Conditions 
+		- When something happens at the same time and the program may not know it
+	- ### TOCTOU 
+		- Time of use attack
+		- something that happens in between storing and running information
+		- Its a race condition
+
+- # Video 2.3.4 Malicious Updates
+	- ### Best Practive when updating 
+		- Keep backup
+		- verify source
+		- make sure their are no bugs or new vulnerabilities
+- # Video 2.3.5 Operating Systems
+	- An operating system is a common place to look for vulnerabilities as they are very complex 
+		- They get patched frequently
+- # Video 2.3.6 SQL Injection
+	- ### SQL Injection 
+		- a common version of code injection where code is put into a database and the code will end up running it when it was just supposed to be something like a username.
+
+		- Instead of getting a simple username you get every username
+- # Video 2.3.7 Cross Site Scripting
+	- ### XSS 
+		- Cross-site scripting
+		- Originally called cross-site because of browser security flaws
+		- one of the most common web based vulnerabilities
+	- ### Non-persistant/reflected XSS attack 
+		- search box is a common source
+		- attacker runs script that sends credentials/session IDs to the attacker
+		- ![image.png](../assets/image_1736400610380_0.png)
+	- ### Persistent (Stored) XSS attack 
+		- attacker posts a malicouse payload to a social network
+		- is persistent as everyone gets the payload
+		- attacks anyone who visits the site
+		- spreads
+- # Video 2.3.8 Hardware vulnerabilities
+	- ### Hardware devices 
+		- dont have a OS or we dont have access to it like IOT
+		- Firmware the only people who can manage or update the system are the manufactures
+	- ### EOL 
+		- End of life
+		- in the future they will stop selling the device but security patches will be applied
+	- ### EOSL 
+		- End of service life
+		- end of security patches
+- # Video 2.3.9 Virtualization vulnerabilities
+	- Quantity of resources between vms
+	- complexity adds opportunities to physical machines
+	- ### Virtual machine escape 
+		- attacker can get into one machine and escape it to get to other vms on the hypervisor
+		- you can have great control
+	- ### Resource Reuse 
+		- the hypervisor manages the relationship between the phyiscal and virtual resoureces
+		- Ram is shared between the vms on a hypervisor
+		- memory areas shared between the vms
+- # Video 2.3.10 cloud vulnerabilities
+	- Cloud adoption has been nearly universal
+	- ### DoS
+		- Denial of service one device
+		- Overload a service
+		- remove competetor from market
+		- can be a smoke screen
+		- Turn off power is easy example of this
+		- can be self inflicted
+	- ### DDoS 
+		- Distributed denial of service is done by many different devices
+		- Use multiple bandwidths to overload a service or sites
+		- Bot nets are used to execute these
+		- Reflecting and amplifying packets by sending small packets and requesting a lot of data like a Ping
+
+		-
+	- ### Directory traversal 
+		- being able to move around a file system
+	- ### Out of bounds write 
+		- when a attacker is able to write into unauthorized memory areas
+- # Video 2.3.11 Supply chain vulnerabilities
+	- When a specific product or thing is on the same network and creates a attack vector
+	- Dont trust just any product use a trusted supplier and even so make sure that you treat the device as a vulnerability.
+- # video 2.3.12
+	- ### Open Permission 
+		- very easy to leave a door open
+		- increasingly common with cloud storage
+		- Verizon left a huge amount of data open
+	- ### Unsecured admin account 
+		- shit passwords
+	- ### Insecure protocols 
+		- telnet
+		- ftp
+		- smtp
+		- imap
+		- You can do a packet capture to check data
+- # Video 2.3.14 Mobile device vulnerabilities
+	- ### Mobile device 
+		- not easy to secure
+		- hard to know where it is
+		- packed with personal information
+- # Video 2.3.15 Zero day vulnerabilities
+	- ### Zero Day Vulnerability 
+		- A vulnerability that has to be patched or will be patched immediately as its a huge security risk
+- # Video 2.4.1 Overview of malware
+	- Different types of malware will work together to attack computer
+- # Video 2.4.2 Viruses and Worms
+	- ### Program Virus 
+		- its part of application
+	- ### Boot sector virus 
+		- in the boot sector of the os
+	- ### Script Virus 
+		- A virus using scripts
+	- ### Macro virus 
+		- common in ms office
+	- ### File-less virus 
+		- Does a good job avoiding AV
+		- Operates only in memory
+	- ### Worms 
+		- they dont need user intervention
+		- They move very fast
+		- Firewalls and IDS/IPS can stop them most times
+- # Video 2.4.3 Spyware and Bloatware
+	- ### Spyware 
+		- Malware that spy's on you advertise preforms identity theft affiliate fraud
+		- Can trick you into installing software
+		- watch everything you do
+		- keylogs
+		- Spyware can be very hard to remove
+	- ### Bloatware 
+		- apps included that you dont expect on a new device
+		- uses space
+		- the system may be running the apps in the background and have a vulnerability
+		- Can be hard to remove third party uninstallers may be needed
+- # Video 2.4.4 Other Malware Types
+	- ### Key-loggers 
+		- They log your keyboard presses
+	- ### Logic Bomb 
+		- waits for a predefined event
+		- usually left by someone with a grudge
+		- Difficult to recover and kills the system
+	- ### Root Kit 
+		- hides itself in the kernel of the OS hard to find
+		- running as part of the os wont show asa process
+		- root kit removal tools
+		- secure boot will check the OS signature to make sure no kernel has been modified
+	-
+- # Video 2.4.5 Physical Attacks
+	- Lock the doors and stuff goofy
+- # Video 2.4.6 Denial of Service
+	- look up goober
+	-
+- # Video 2.4.7 DNS Attacks
+	- ### DNS Poisoning / spoofing 
+		- Pretty tricky to complete
+		- Edits the Domain names and the IP addresses they point to
+		- can be done on a  dns server the client or a middle man
+	- ### Domain Hijacking 
+		- Dont need the actual servers just the domain name
+		- Modified through the account that manages or owns the domain name like a cloudflare account
+		- can be gotten by social engineering brute force etc.
+	- ### URL Hijacking 
+		- redirect users that produce advertising
+		- sell the similar named domain to the actual owner or a competitor
+		- can create a phishing site
+	- ### typosquatting 
+		- takes advantage of poor spelling
+		- professormesser.com to profesormessor.com
+- # Video 2.4.8 Wireless Attacks
+	- ### Wireless deauthentication attack 
+		- is a DoS attack that kicks people off the wireless network
+	- ### 802.11 management frames 
+		- Wireless frames that make things work connect manage disconnect
+		- old 802.11 did not encrypt these frames
+		- 802.11ac is the secure protocol not everything is encrypted
+	- ### RF jamming 
+		- Radio Frequency jamming
+		- transmit interfering wireless signals
+		- just creating noise drowning out
+- # Video 2.4.9 On-Path Attacks
+	- ### On path attack 
+		- man in the middle attack
+		- listing in the middle of the conversation
+		- ARP Poising is a form of these as it has no security so he can look at the arp packets and spoof them
+	- ### On path browser attack 
+		- man on the browser attack
+		- a piece of malware that runs on the device and messes with the data before its encrypted
+- # Video 2.4.10 Replay Attacks
+	- ### Replay attack 
+		- caputuer valuable infomration passing through the network
+		- this needs a network tap arp poisining
+		- malware on vivtims computer
+		- they then replay this infomation pretending to be that computer
+	- ### Session hyjacking/sidejacking 
+		- replaying a session id
+	- ### headers manipulation 
+		- editing packets, wireshark kismit can view these
+		- use end to end encryption to hide data
+- # Video 2.4.11 Malicious Code
+- # Video 2.4.12  Application Attacks
+	- ### privilege escalation 
+		- common
+		- allows hacker to move from user to user
+		- pathcing apps
+	- ### cross site requests 
+		- are common and legitmate
+		- when lots of infomration is being loaded from othe r servers
+		- a site including insta and youtube videos
+	- ### cross site forgery 
+		- one click attack session riding
+		- takes advatntage of sites that trust a users browser
+		- visiting Facebook and it trusts you so malware on your computer will post stuff for you
+- # Video 2.4.13 Cryptographic Attacks
+	- ### birthday attack 
+		- hash collison
+		- 2 things or files with the same hash
+	- ### downgrade attack 
+		- force a computer to use bad encrpytion
+		- ssl stripping
+			- onpath attack
+			- tell the user that encryption is not needed and all ssk requests will continue to use http not https
+- # Video 2.4.14 Password Attacks
+-
+- # Video 2.4.15 Indicators of Compromise
+	- ### IOC 
+		- idacators of compramise
+		- unusual network activity
+		- change in has file names
+	- ### Out of Cycle loging 
+		- log that occurs at an unusual time
+		- attackers will delete logs
+- # Video 2.5.1 Segmentation Access Control
+	- ### Physical logical or virtual segmentation 
+		- vlans
+	- ### security
+		- users sould not directly interact with a database server but with a applciation server that interacts wit hthe db
+	- ### compliance
+		- you may have to comply with rules based on the information you are handling such as pci/credit cards
+	- ### ACL 
+		- access control lists
+	- ### Allow list 
+		- only things here can be executed
+	- ### deny list 
+		- things are excluded antiviruss are like this
+- # Video 2.5.2 Migration Techniques
+	- ### Least Privilege 
+		- permssions for a user based on what they need
+		- example
+			- user sould never need administrator privilage
+	- ### posture assessment 
+		- check if you are secure when you boot up
+		- patches
+		- edr (end point and response)
+		- status of firewall
+- # Video 2.5.3 Hardening Techniques
+	- ### EDR 
+		- end point detection and response/server
+		- detects a threat, can have machine learning and process monitoring to find new malware that hasent been seen before
+		- investigates using root cause analysis
+		- API driven
+	- ### HIPS 
+		- host based intrusion prevention system/host
+		-

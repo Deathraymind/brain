@@ -1,0 +1,214 @@
+[[Security+ Week 4]] #security
+- # Video 3.1.1 Cloud Infrastructure
+	- ### Cloud responsibility matrix 
+		- shows whos is responsible for security
+	- ### Hybrid consideration 
+		- more than one public or private cloud
+	- ### Vendor risk management policy 
+		- assess the security of your cloud providers
+	- ### Infrastructure as code
+		- define servers network and applications as code
+
+	- ### FaaS 
+		- function as a service
+		- remove the operating system from the equation
+		- applications are separated into individual autonomous functions
+	- ### Monolithic applications
+		- one big app does everything
+	- ### APIs and micro services 
+		- application programming interfaces
+		- is the glue for the microservices
+		- more resilient
+
+- # Video 3.1.2 Network Infrastructure Concepts
+	- ### SDN 
+		- software defined networking
+		- network devices have different functional planes like data control and management planes
+		- perfect for cloud
+		- ### Infastructure Layer / Data Plane 
+			- The data on the lines
+			- process the network frames and packets
+			- forwarding trunking encryption and NAT
+		- ### Control Layer / Control plane 
+			- telling the data where to go
+			- manage the actions of the data plane
+			- routing tables sessions tables nat tables
+		- ### Application Layer 
+			- configure and manage the device
+			- ssh browser api
+
+- # Video 3.1.3 Other Infrastructure Concepts
+	- ### Containerization 
+		- containes everything you need to run an applciation
+		- code and dependcies
+		- everything but the OS
+
+	- ### SCADA / ICS 
+		- Supervisory control and data acquisition system
+		- Industrial Control System (ICS)
+		- Monitor equipment from central panel
+		- Completely segmented from outside
+	- ### RTOS Real-Time Operating Systems 
+		- A process takes priority
+		- military environments and automobiles need priority
+		- need to always be available
+	- # Video 3.1.4 Infrastructure Considerations
+		- ### MTTR 
+			- Mean Time to Repair
+		- ### Risk transference 
+			- transfer the risk to a third-part
+			- cyber security insurance
+- # Video 3.2.1 Secure Infrastructures
+	- ### Firewalls 
+		- segment the network from outside
+		- also can use honeypots jump server sensros and load blancer
+	- ### Security-Zone 
+		- Logically segment a network based on the functions of the devices
+		- IOT would be on a seperate vlan
+		- Simplifies security
+- # Video 3.2.2 Intrusion Prevention
+	- ### IPS 
+		- Intrusion prevention system
+		- watch the network traffic
+	- ### IDS 
+		- Intrusions detection system
+	- ### Fail-open 
+		- when it crashes data will continue to flow without security
+	- ### Fail-closed 
+		- security and network connection will be severed
+	- ### Passive monitoring 
+		- copies of data are sent to the IPS kind of a IDS since it cant block traffic real time
+		- uses port mirror/ SPAN or network tap
+
+	- ### Active Monitoring 
+
+- # Video 3.2.3 Network Appliances
+	- ### Jump Server 
+		- A server that is accessible from outside of the network limited to very few admins
+		- hardened
+	- ### Proxy Server 
+		- sits between the users
+		- useful for caching, URL filtering, content scanning
+		- NAT is a proxy
+		- nginx is a application proxy
+	- ### Explicit Proxy 
+		- You have to tell the OS or browser to go through the proxy
+	- ### Transparent Proxy 
+		- invisible to the user
+	- ### Forward Proxy 
+		- an internal proxy
+		- managing data exiting a network
+	- ### Reverse Proxy 
+		- inbound traffic from the internet to youre network
+		- nginx proxy on my network
+	- ### Open Proxy 
+		- third party proxy available to anyone to use
+		- third party can see your data and inject data
+	- ### Active/active load balencing 
+		- all servers are active and being used by the load balencer
+		- tcp offload
+		- ssl encryption can be done by load balance
+		- can cache
+		- QoS prioritization
+	- ### Active/passive load balancing 
+		- some servers are being active and others are on standby
+	- ### SIEM 
+		- Security information event manager
+		- collects logs from many different sensors on the network
+- # Video 3.2.4 Port Security
+	- Lock down yo ports
+	- ### EAP
+		- Extensible Authentication Protocol
+		- 802.1x prevent access to the network until the authentication succeeds
+	- ### 802.1x
+		- NAC or port-based network access control EAP works with 802.1x
+		- used with RADIUS LDAP TACACS+ Kerberos etc
+- # Video 3.2.5 Firewall Types
+	- ### Network Based Firewalls 
+		- OSI layer 4 or newer ones can do 7
+		- VPN
+		- Can act as Layer 3
+		- NAT
+	- ### UTM 
+		- Unified Threat Management Device
+		- Web Security gateway
+		- URL Filtering/content inspection
+		- block malware
+		- filter spam
+		- CSU/DSU
+		- Rout and switching
+		- Firewall
+		- IPS/IDS
+		- VPN
+		- Layer 4 lower performance
+	- ### NGFW 
+		- Next Gen firewall
+		- OSI 7
+		- look at all data on network get all the details
+		- can read twitter but not post
+		- doesn't look just at the port but the actual application
+		- opnsense + zenarmor
+	- ### WAF
+		- web application firewall
+		- works with http/https
+		- allow and deny based on expected input
+		- can see sql injection
+- # Video 3.2.6 Secure Communication                                       
+- # Video 3.3.1 Data Types and Classifications
+	- ### Regulated Data 
+		- managed by third party
+		- credit card stuff
+		- trade secrets for organization
+		- intellectual data such as trademarks and patents
+	- ### Legal information 
+		- court records documents attory information is public
+		- but PII is secret
+	- ### PHI 
+		- protected health information
+		- health status health care records
+- # Video 3.3.2 States of Data
+	- ### GDPR 
+		- General Data Protection Regulation
+		- European data laws any data collected from Europeans must be held in the EU
+	- ### Data Sovereignty 
+		- data that resides in a country has to follow its regulations
+- # Video 3.3.3 Protecting Data
+	- ### network location  mobile 
+		- identify based on ip subnet
+		- GPS
+		- 802.11
+		- Ip addresses, not accurate
+	- ### Geo Fencing
+		- locking data based on where the user is
+		- if a dude is in the building he can access the data if hes at home he cant
+- # Video 3.4.1 Resiliency
+	- ### HA 
+		- High Availability
+		- system running in parallel for if the main one fails
+	- ### Server Clustering 
+		- combine two or more servers
+		- scalable
+		- usually within the OS
+	- ### Site resiliency 
+		- where a whole network is off site when the main one fails
+	- ### Hot site 
+		- a data center where are the data is duplicated
+	- ### Cold Site 
+		- Empty Building
+		- bring all data and equipment and people to run the site
+	- ### Warm Site 
+		- some equipment is on site
+	- ### Geographic dispersion 
+		- these sites should be physically different than the organizations primary location
+	- ### Platform Diversity 
+		- keep systems diverse in case one OS has a vulnerability
+	- ### COOP 
+		- Continuity of operation planning
+		- in case tech fails how do  we do things manually or differently
+- # Video 3.4.2 Capacity Planning
+	- Try to predict supply and demand
+- # Video 3.4.3 Recovery Testing
+	- Fake a scenario
+	- follow procedures and recover
+	- revise and improve
+- ### Tabletop exercise
