@@ -117,8 +117,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -196,12 +195,22 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "9af2f7f51afda6b4",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -220,17 +229,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d9a98276c738ced7",
+  "active": "bfbb4eadc131e1e7",
   "lastOpenFiles": [
     "Certifications/Linux Essentials/Flashcards.md",
+    "Self Improvement/2025 Self improvement.md",
+    "Certifications/Linux Essentials/Linux Essentials  Plan & Resources.md",
     "Obsdian Setup/Obsidian Plugins.md~",
     "2025-05-11.md",
     "Self Improvement/Untitled.canvas",
-    "Self Improvement/2025 Self improvement.md",
     "Self Improvement",
     "Obsdian Setup/Obsidian Plugins.md",
     "Obsdian Setup",
-    "Certifications/Linux Essentials/Linux Essentials  Plan & Resources.md",
     "Certifications/Linux Essentials/Linux Essentials PDF.md",
     "Certifications/Linux Essentials/Linux+ Plan.canvas",
     "Certifications/Security+/professor-messer-sy0-701-comptia-security-plus-practice-exams-v18-1.pdf",
