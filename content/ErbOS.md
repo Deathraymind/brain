@@ -1,4 +1,4 @@
-**ErbOS** is my custom NixOS configuration, the second operating system I’ve built. It is composed of a series of Nix files organized with Flakes.
+**ErbOS** is my custom NixOS configuration, the second operating system I’ve built [[My Linux Journey]]. It is composed of a series of Nix files organized with Flakes.
 
 As the predecessor to my first OS, BowOS, it employs a much more toggleable approach to enabling system features. By utilizing **Home Manager** and **Flakes**, I’ve created an environment that is both sleek and highly functional. One of the biggest visual changes is the switch from Hyprland to **Niri**. Niri isn't a traditional window manager; it’s a scrollable window tiler with infinite direction in both the X and Y axes.
 
