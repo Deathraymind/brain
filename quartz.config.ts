@@ -28,29 +28,28 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
+    lightMode: {
+      light: "#fafafa",         // Standard Carbon White
+      lightgray: "#e0e0e0",
+      gray: "#a8a8a8",
+      darkgray: "#393939",
+      dark: "#161616",
+      secondary: "#0f62fe",     // IBM Blue
+      tertiary: "#8a3ffc",      // Soft Purple
+      highlight: "rgba(15, 98, 254, 0.1)",
+      textHighlight: "#fff2b2",
+    },
+    darkMode: {
+      light: "#000000",         // Pure Black (OLED)
+      lightgray: "#262626",     // Subtle Borders
+      gray: "#525252",          // Secondary Text
+      darkgray: "#dde1e6",      // Body Text
+      dark: "#f2f4f8",          // Titles
+      secondary: "#78a9ff",     // Oxocarbon Cyan/Blue
+      tertiary: "#be95ff",      // Oxocarbon Purple
+      highlight: "rgba(120, 169, 255, 0.15)", // Subtle link background
+      textHighlight: "#3d3d3d",
+    },      },
     },
   },
   plugins: {
