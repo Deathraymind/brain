@@ -8,8 +8,8 @@
 
 
 <div class="terminal-container" style="
-    background: #000; 
-    border: 1px solid #48b05b; 
+    background: #131314; 
+    border: 2px solid #48b05b; 
     margin: 20px 0; 
     font-family: 'IBM Plex Mono', monospace;
     position: relative;
@@ -26,14 +26,14 @@
       position: absolute;
       top: -1px;
       left: -1px;">
-    WORKSPACE: ErbOS
+    WORKSPACE: My Brain
   </div>
 
   <div style="padding: 35px 20px 20px 20px;">
 
 
->  [!warning]- ErbOS
-> # 🛰️ [[ErbOS]]
+>  [!warning]- OPERATING_SYSTEM: ErbOS
+> # gcc[[ErbOS]]
 > | SYSTEM | SPECIFICATION |
 > | :--- | :--- |
 > | **DESKTOP** | `Niri` (Wayland) |
@@ -53,14 +53,14 @@
 
 
 
-> [!d]- WORKSPACE: Home_Lab (Click to Expand)
-> # 🏗️ Home Lab Manifest
+> [!d]- WORKSPACE: Home_Lab
+> #  Home Lab Manifest
 > 
 > | COMPONENT | SPECIFICATION |
 > | :--- | :--- |
-> | **HYPERVISOR** | `Proxmox VE` |
-> | **NODE_01** | `HP ProLiant DL360 G7` |
-> | **NODE_02** | `HP ProLiant DL360 G7` |
+> | **HYPERVISOR** | [[Proxmox VE]] |
+> | **NODE_01** | [[HP ProLiant DL360 G7]] |
+> | **NODE_02** | [[HP ProLiant DL360 G7]] |
 > | **CLUSTER** | `High Availability (HA)` |
 > 
 > ---
@@ -88,7 +88,7 @@
       font-size: 0.65rem; 
       color: #444;
       border-top: 1px solid #1a1a1a;">
-    <div>STATUS: ACTIVE</div>
+    <div>STATUS: ACTIVE, POOR PERFORMANCE</div>
     <div style="color: #48b05b;">SYS_REF: 0x[0001]</div>
   </div>
 </div>

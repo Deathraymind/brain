@@ -23,7 +23,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-header: "Bungee",    // Use this for the "Booting" titles
+header: "JetBrains Mono",    // Use this for the "Booting" titles
   body: "IBM Plex Mono",   // Stick with IBM for the body; it's easier on the eyes for long text
   code: "IBM Plex Mono",
 },
@@ -40,7 +40,7 @@ header: "Bungee",    // Use this for the "Booting" titles
       textHighlight: "#fff2b2",
     },
     darkMode: {
-      light: "#000000",         // Pure Black (OLED)
+      light: "#161616",         // Pure Black (OLED)
       lightgray: "#262626",     // Subtle Borders
       gray: "#525252",          // Secondary Text
       darkgray: "#dde1e6",      // Body Text
