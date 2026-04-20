@@ -13,3 +13,17 @@ I have many projects I work on in alot of feilds, this is to document my adhd ca
     <td style="text-align: center; border: 1px solid; padding: 10px;">Row 1, Col 2</td>
   </tr>
 </table>
+
+> [!project] Project: Neural_Ghost
+> **Status:** `ACTIVE`
+> **Stack:** TypeScript, Rust, SQLite
+> ---
+> A decentralized autonomous agent for indexing occult data across the dark web. 
+> [View Repository →](https://github.com/)
+
+> [!project] Project: Void_OS
+> **Status:** `STABLE`
+> **Stack:** C++, Assembly
+> ---
+> Low-level kernel experiment designed for x86-64 architecture with zero-alloc memory management.
+> [View Repository →](https://github.com/)
