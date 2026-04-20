@@ -23,10 +23,10 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
-      },
+header: "Bungee",    // Use this for the "Booting" titles
+  body: "IBM Plex Mono",   // Stick with IBM for the body; it's easier on the eyes for long text
+  code: "IBM Plex Mono",
+},
       colors: {
     lightMode: {
       light: "#fafafa",         // Standard Carbon White
@@ -45,7 +45,7 @@ const config: QuartzConfig = {
       gray: "#525252",          // Secondary Text
       darkgray: "#dde1e6",      // Body Text
       dark: "#f2f4f8",          // Titles
-      secondary: "#78a9ff",     // Oxocarbon Cyan/Blue
+      secondary: "#50fa7b",     // Oxocarbon Cyan/Blue
       tertiary: "#be95ff",      // Oxocarbon Purple
       highlight: "rgba(120, 169, 255, 0.15)", // Subtle link background
       textHighlight: "#3d3d3d",

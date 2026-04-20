@@ -1,18 +1,20 @@
 @use "../../styles/variables.scss" as *;
 
+// Animation for the boot effect
+@keyframes terminalFade {
+  0% { opacity: 0; transform: translateX(-5px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
 @media all and ($mobile) {
   .page > #quartz-body {
-    // Shift page position when toggling Explorer on mobile.
     & > :not(.sidebar.left:has(.explorer)) {
       transition: transform 300ms ease-in-out;
     }
-
     &.lock-scroll > :not(.sidebar.left:has(.explorer)) {
       transform: translateX(100dvw);
       transition: transform 300ms ease-in-out;
     }
-
-    // Sticky top bar (stays in place when scrolling down on mobile).
     .sidebar.left:has(.explorer) {
       box-sizing: border-box;
       position: sticky;
@@ -20,7 +22,6 @@
       padding: 1rem 0 1rem 0;
       margin: 0;
     }
-
     .hide-until-loaded ~ .explorer-content {
       display: none;
     }
@@ -31,16 +32,12 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-
   min-height: 1.2rem;
   flex: 0 1 auto;
 
   &.collapsed {
     flex: 0 1 1.2rem;
-
-    & .fold {
-      transform: rotateZ(-90deg);
-    }
+    & .fold { transform: rotateZ(-90deg); }
   }
 
   & .fold {
@@ -59,37 +56,18 @@
     margin-bottom: auto;
   }
 
-  button.mobile-explorer {
-    display: none;
-  }
-
-  button.desktop-explorer {
-    display: flex;
-  }
+  button.mobile-explorer { display: none; }
+  button.desktop-explorer { display: flex; }
 
   @media all and ($mobile) {
-    button.mobile-explorer {
-      display: flex;
-    }
-
-    button.desktop-explorer {
-      display: none;
-    }
-  }
-
-  &.desktop-only {
-    @media all and not ($mobile) {
-      display: flex;
-    }
+    button.mobile-explorer { display: flex; }
+    button.desktop-explorer { display: none; }
   }
 
   svg {
     pointer-events: all;
     transition: transform 0.35s ease;
-
-    & > polyline {
-      pointer-events: none;
-    }
+    & > polyline { pointer-events: none; }
   }
 }
 
@@ -103,7 +81,6 @@ button.desktop-explorer {
   color: var(--dark);
   display: flex;
   align-items: center;
-
   & h2 {
     font-size: 1rem;
     display: inline-block;
@@ -117,20 +94,39 @@ button.desktop-explorer {
   overflow-y: auto;
   margin-top: 0.5rem;
 
+  // Linux Boot Line Styling
+  .boot-line {
+    opacity: 0;
+    animation: terminalFade 0.1s ease-out forwards;
+    font-family: var(--codeFont);
+    display: flex;
+    align-items: baseline;
+
+    &::before {
+      content: "[  OK  ]";
+      color: #50fa7b;
+      font-size: 0.65rem;
+      margin-right: 8px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    // Staggered delays for the first 30 lines
+    @for $i from 1 through 30 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+
   & ul {
     list-style: none;
     margin: 0;
     padding: 0;
-
-    &.explorer-ul {
-      overscroll-behavior: contain;
-    }
-
     & li > a {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
-
       &.active {
         opacity: 1;
         color: var(--tertiary);
@@ -142,9 +138,7 @@ button.desktop-explorer {
     visibility: collapse;
     display: grid;
     grid-template-rows: 0fr;
-    transition-property: grid-template-rows, visibility;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: grid-template-rows 0.3s ease-in-out, visibility 0.3s;
   }
 
   .folder-outer.open {
@@ -165,118 +159,29 @@ button.desktop-explorer {
   display: flex;
   align-items: center;
   user-select: none;
-
-  & div > a {
+  & div > a, & div > button span {
     color: var(--secondary);
     font-family: var(--headerFont);
     font-size: 0.95rem;
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
-    display: inline-block;
   }
-
-  & div > a:hover {
-    color: var(--tertiary);
-  }
-
   & div > button {
-    color: var(--dark);
-    background-color: transparent;
+    background: transparent;
     border: none;
-    text-align: left;
     cursor: pointer;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    font-family: var(--headerFont);
-
-    & span {
-      font-size: 0.95rem;
-      display: inline-block;
-      color: var(--secondary);
-      font-weight: $semiBoldWeight;
-      margin: 0;
-      line-height: 1.5rem;
-      pointer-events: none;
-    }
   }
 }
 
 .folder-icon {
   margin-right: 5px;
   color: var(--secondary);
-  cursor: pointer;
   transition: transform 0.3s ease;
-  backface-visibility: visible;
-  flex-shrink: 0;
 }
 
 li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   transform: rotate(-90deg);
-}
-
-.folder-icon:hover {
-  color: var(--tertiary);
-}
-
-.explorer {
-  @media all and ($mobile) {
-    &.collapsed {
-      flex: 0 0 34px;
-
-      & > .explorer-content {
-        transform: translateX(-100vw);
-        visibility: hidden;
-      }
-    }
-
-    &:not(.collapsed) {
-      flex: 0 0 34px;
-
-      & > .explorer-content {
-        transform: translateX(0);
-        visibility: visible;
-      }
-    }
-
-    .explorer-content {
-      box-sizing: border-box;
-      z-index: 100;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: 0;
-      background-color: var(--light);
-      max-width: 100vw;
-      width: 100vw;
-      transform: translateX(-100vw);
-      transition:
-        transform 200ms ease,
-        visibility 200ms ease;
-      overflow: hidden;
-      padding: 4rem 0 2rem 0;
-      height: 100dvh;
-      max-height: 100dvh;
-      visibility: hidden;
-    }
-
-    .mobile-explorer {
-      margin: 0;
-      padding: 5px;
-      z-index: 101;
-
-      .lucide-menu {
-        stroke: var(--darkgray);
-      }
-    }
-  }
-}
-
-.mobile-no-scroll {
-  @media all and ($mobile) {
-    .explorer-content > .explorer-ul {
-      overscroll-behavior: contain;
-    }
-  }
 }
