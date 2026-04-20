@@ -3,6 +3,7 @@ My school got rid of around 120 Aruba AP-205s that were going to be thrown away.
 They were locked down pretty heavily — the installed images were locked down too, so we couldn’t access the web UI or run any commands. We had to sort out a few things first.
 
 The main one was a stock Aruba image that I retrieved from a forum (I can’t find the link anymore). It’s been scanned, and Security Onion with all its logging tools didn’t pick up anything suspicious even after running about 20 of them on a network with this image, so it’s most likely clean.
+
 ![[Pasted image 20260420132012.png]]
 The GitHub repo for what I had to do is here: [https://github.com/Deathraymind/StemLabMK2/tree/main/Firmware](https://github.com/Deathraymind/StemLabMK2/tree/main/Firmware)
 
