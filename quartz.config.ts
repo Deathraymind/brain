@@ -40,7 +40,7 @@ header: "JetBrains Mono",    // Use this for the "Booting" titles
       textHighlight: "#fff2b2",
     },
     darkMode: {
-      light: "#161616",         // Pure Black (OLED)
+      light: "#000000",         // Pure Black (OLED)
       lightgray: "#262626",     // Subtle Borders
       gray: "#525252",          // Secondary Text
       darkgray: "#dde1e6",      // Body Text
