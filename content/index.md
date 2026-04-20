@@ -6,7 +6,6 @@
 
 
 
-
 <div class="terminal-container" style="
     background: #131314; 
     border: 2px solid #48b05b; 
@@ -97,3 +96,40 @@
 
 
 
+```
+                '^^'                                                            
+            I<~!i>~>::;'                        
+          !{}_>~;`"">}1_,.                      
+          ]xf(~_'        i(t_                   
+        ?0Uc~!            >_<'                  
+       :ZOw|+               "{1                 
+       rpq01l                !tj\               
+      `Op*r_                                    
+      +bwb\`                    I|ul            
+      )amw1                     )(j             
+      /bpq{'                     `              
+      (wqC/"                       "]           
+      {0J0|:                       ]z(          
+      ~UQQ]                         :+_         
+      "vXJ]'            ':l!i<<>l"' l[}         
+       \nc):          ^l~}fxYYcr|}+, <p$/        
+       _xf)<         "i]tU Ring qz)~^ xbx        
+       '(\)-I        .:+|X World WLf] --^      
+        <[}<[        ._"God doesnt Lf  '[LY      
+        '~+i-.       'l_(protect \]i, ) $*^      
+         :il!,         .,!fools.."]-!'  .rj,     
+          ;:"l            '^"""^'.      _r?     
+           "`^!                         X&C     
+           ." ;~                        {Ju     
+            '' -I                       ."I     
+             .  {                       {v      
+                .i                     _OL      
+                 .l                    !}!      
+                   >.                 -QY"      
+                    ?l                zWO       
+                     <+               l?`       
+                       l'            +Xh}       
+                        `i;         <nc{        
+                          `<I.  ^_uJ1.          
+                               ^:!I^            
+```
