@@ -32,7 +32,7 @@
 
 
 >  [!warning]- OPERATING_SYSTEM: ErbOS
-> # gcc[[ErbOS]]
+> # gcc[[ErebOS]]
 > | SYSTEM | SPECIFICATION |
 > | :--- | :--- |
 > | **DESKTOP** | `Niri` (Wayland) |
