@@ -33,7 +33,7 @@
 
 
 >  [!warning]- ErbOS
-> # 🛰️ [[ErbOS]]
+> # 🛰️ [[ErebOS]]
 > | SYSTEM | SPECIFICATION |
 > | :--- | :--- |
 > | **DESKTOP** | `Niri` (Wayland) |
