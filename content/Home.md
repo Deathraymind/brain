@@ -51,8 +51,11 @@
 > 
 > `STATUS: ACTIVE` | `SYS_REF: 0xERB_OS_NIX`
 
+
+
+
 >  [!warning]- IshikoriOS
-> # 🛰️ [[ErebOS]]
+> # 🛰️ [[IshikoriOS]]
 > | SYSTEM | SPECIFICATION |
 > | :--- | :--- |
 > | **Virtualization** | `QEMU` |
