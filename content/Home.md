@@ -68,7 +68,7 @@
 > 
 > 
 > 
-> `STATUS: ACTIVE` | `SYS_REF: 0xIshikori_OS_NIX`
+> `STATUS: ACTIVE` | `SYS_REF: 1xIshikori_OS_NIX`
 
 
 
