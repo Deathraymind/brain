@@ -12,7 +12,7 @@ To get things running, we rely on ZFS snapshots. The `recursive` flag is the sec
 
 Nix
 
-```
+``` python
 services.sanoid = {
   enable = true;
   datasets."vmpool/images" = {
@@ -57,7 +57,7 @@ You can integrate this into your host configuration like this:
 
 Nix
 
-```
+``` python
 services.qemu-incremental-backup-nightly = {
   enable = true;
   peerIps = cfg.peerIps;
@@ -72,7 +72,7 @@ Once the peer has the base image, only the CPU/RAM state and the overlay file ne
 
 Bash
 
-```
+``` python
 sudo virsh migrate --live --undefinesource --copy-storage-inc --persistent --verbose --auto-converge \
   "VM" \
   "qemu+ssh://TARGET_USER@TARGET_IP/system" \
@@ -85,7 +85,7 @@ To enable this in your config:
 
 Nix
 
-```
+``` python
 programs.qemu-live-migrate = {
   enable = true;
   defaultUser = "deathraymind";
