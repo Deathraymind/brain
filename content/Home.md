@@ -51,6 +51,25 @@
 > 
 > `STATUS: ACTIVE` | `SYS_REF: 0xERB_OS_NIX`
 
+>  [!warning]- IshikoriOS
+> # 🛰️ [[ErebOS]]
+> | SYSTEM | SPECIFICATION |
+> | :--- | :--- |
+> | **Virtualization** | `QEMU` |
+> | **CORE** | `NixOS` |
+> | **KERNEL** | `Linux 7.1` |
+> | **BUILD** | `Fully Declarative` |
+> 
+> ---
+> ### 📝 LOG_ENTRY
+> IshikoriOS is a hypervisor built in nix, its goal is to be highly available, simple and easy to redeploy, if something breaks it is automatically replaced.
+> 
+> ![[Pasted image 20260706190949.png]]
+> 
+> 
+> 
+> `STATUS: ACTIVE` | `SYS_REF: 0xIshikori_OS_NIX`
+
 
 
 > [!d]- WORKSPACE: Home_Lab (Click to Expand)
@@ -58,9 +77,9 @@
 > 
 > | COMPONENT | SPECIFICATION |
 > | :--- | :--- |
-> | **HYPERVISOR** | `Proxmox VE` |
+> | **HYPERVISOR** | `IshikoriOS` |
 > | **NODE_01** | `HP ProLiant DL360 G7` |
-> | **NODE_02** | `HP ProLiant DL360 G7` |
+> | **NODE_02** | `Dell T320` |
 > | **CLUSTER** | `High Availability (HA)` |
 > 
 > ---
