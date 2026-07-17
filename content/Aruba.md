@@ -13,6 +13,8 @@ There’s the firmware. And here are the docs.
 ### Requirements!
 - [[TFTP Server On Linux]]
 - [Aruba IAP Firmware]()
+Console into the device I use minicom..
+```sudo minicom -D /dev/ttyUSB0 -b 115200```
 
 #### 1. Upgrade OS Command:
 
